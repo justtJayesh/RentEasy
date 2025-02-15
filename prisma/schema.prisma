@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Below model are used in postgres
+
+model CallbackRequest {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   
+  phone     String
+  address   String
+  createdAt DateTime @default(now())
+}
+
+model Product {
+  id          String  @id @default(cuid())
+  name        String
+  description String
+  price       Float
+  image       String
+  available   Boolean @default(true)
+}
