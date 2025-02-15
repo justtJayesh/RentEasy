@@ -40,6 +40,10 @@ export async function CreatePotentialUser(
         revalidatePath("/");
         return { message: "Request submitted successfully!" };
     } catch (error: unknown) {
-        return { message: "Internal server error, please try after a while. Thankyou!" };
+        return {
+            message:
+                "Internal server error, please try after a while. Thankyou!",
+            error,
+        };
     }
 }

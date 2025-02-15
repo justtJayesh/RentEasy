@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import RentalRequestForm from "@/components/rental-request-form";
+import Image from "next/image";
 
 interface Product {
     id: string;
@@ -34,10 +35,10 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
                 {products.map((product) => (
                     <Card key={product.id} className="overflow-hidden">
                         <div className="relative aspect-square">
-                            <img
+                            <Image
                                 src={product.image || "/placeholder.svg"}
                                 alt={product.name}
-                                // fill
+                                fill
                                 className="h-full w-full object-cover"
                             />
                             {!product.available && (

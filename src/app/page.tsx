@@ -4,6 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import ProductGrid from "@/components/product-grid";
 import TestimonialSection from "@/components/testimonial-section";
 import { prisma } from "@/lib/prismaClient";
+import Image from "next/image";
+import Link from "next/link";
 
 export default async function Home() {
     const products = await prisma.product.findMany();
@@ -24,17 +26,19 @@ export default async function Home() {
                                 heavy investment.
                             </p>
                             <div className="flex gap-4">
-                                <Button size="lg">
-                                    Browse Appliances
-                                    <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                                <Button variant="outline" size="lg">
+                                <Link href={"/products"}>
+                                    <Button size="lg">
+                                        Browse Appliances
+                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                    </Button>
+                                </Link>
+                                {/* <Button variant="outline" size="lg">
                                     How it Works
-                                </Button>
+                                </Button> */}
                             </div>
                         </div>
                         <div className="relative hidden lg:block">
-                            <img
+                            <Image
                                 src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Kitchen appliances"
                                 width={600}
@@ -47,7 +51,7 @@ export default async function Home() {
             </section>
 
             {/* Popular Products Section */}
-            <section className="py-16">
+            <section className="py-10 space-y-10">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">Popular Products</h2>
@@ -56,6 +60,13 @@ export default async function Home() {
                         </p>
                     </div>
                     <ProductGrid products={products} />
+                </div>
+                <div className="flex items-center justify-center">
+                    <Link href={"/products"}>
+                        <Button variant={"ghost"} className="text-lg p-6">
+                            View all <ArrowRight />
+                        </Button>
+                    </Link>
                 </div>
             </section>
 

@@ -123,7 +123,7 @@ export function Footer() {
                                     href="tel:+1234567890"
                                     className="text-sm text-muted-foreground hover:text-primary"
                                 >
-                                    +1 (234) 567-890
+                                    +91 7038582805
                                 </Link>
                             </li>
                             <li>
@@ -139,7 +139,7 @@ export function Footer() {
                 </div>
                 <div className="mt-8 border-t pt-8">
                     <p className="text-center text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} RentEase. All rights
+                        © {new Date().getFullYear()} OnRent. All rights
                         reserved.
                     </p>
                 </div>

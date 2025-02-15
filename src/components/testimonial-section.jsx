@@ -1,31 +1,31 @@
 import Image from "next/image";
-import { Star } from "lucide-react";
+import { Star, User } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
     {
-        name: "Sarah Johnson",
+        name: "Aman Singh",
         role: "Working Professional",
         comment:
-            "RentEase made furnishing my new apartment so convenient. Their service is exceptional!",
+            "OnRent made furnishing my new apartment so convenient. Their service is exceptional!",
         rating: 5,
-        image: "/placeholder.svg",
+        image: "/user.png",
     },
     {
-        name: "Michael Chen",
+        name: "Jatin Chankapure",
         role: "Student",
         comment:
             "Affordable rentals and great quality products. Perfect for my temporary stay!",
-        rating: 5,
-        image: "/placeholder.svg",
+        rating: 4,
+        image: "/user.png",
     },
     {
-        name: "Emily Davis",
-        role: "Freelancer",
+        name: "Pratik Gaikwad",
+        role: "Student",
         comment:
             "The convenience of having appliances delivered and installed is unmatched.",
-        rating: 5,
-        image: "/placeholder.svg",
+        rating: 4,
+        image: "/user.png",
     },
 ];
 
@@ -63,10 +63,7 @@ export default function TestimonialSection() {
                                 </p>
                                 <div className="flex items-center gap-4">
                                     <Image
-                                        src={
-                                            testimonial.image ||
-                                            "/placeholder.svg"
-                                        }
+                                        src={testimonial.image || <User />}
                                         alt={testimonial.name}
                                         width={40}
                                         height={40}
