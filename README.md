@@ -1,36 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏠 Onrent - Student Housing Essentials Rental Platform
 
-## Getting Started
+![Onrent Banner]()
 
-First, run the development server:
+[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=flat-square&logo=Prisma&logoColor=white)](https://www.prisma.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat-square&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📋 Overview
+
+Onrent is an e-commerce platform designed for students who relocate to different cities for studies and need to rent essential utilities for their living spaces. The platform allows students to browse, select, and request essential items like refrigerators, coolers, washing machines, beds, couches, and more.
+
+### 🎯 Key Features
+
+- Clean, responsive UI built with Tailwind CSS and Shadcn components
+- Product listings with detailed information
+- User-friendly request form
+- Secure data storage with PostgreSQL and Prisma ORM
+- Scalable architecture using Next.js
+
+## 🚀 Live Demo
+
+[Visit Onrent Platform](https://onrent-platform.vercel.app)
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS, Shadcn UI
+- **Backend**: Next.js API routes
+- **Database**: PostgreSQL with Prisma ORM
+- **Deployment**: Vercel
+
+## 🏗️ Project Structure
+
+```
+onrent/
+├── app/
+│   ├── api/
+│   │   └── callback/
+│   │       └── route.ts
+│   ├── products/
+│   │   └── [id]/
+│   │       └── page.tsx
+│   ├── callback/
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── ui/
+│   ├── product-card.tsx
+│   ├── product-grid.tsx
+│   ├── callback-form.tsx
+│   └── header.tsx
+├── lib/
+│   └── prisma.ts
+├── prisma/
+│   └── schema.prisma
+├── public/
+├── styles/
+│   └── globals.css
+├── next.config.js
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Setup & Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+ and npm
+- PostgreSQL database
 
-## Learn More
+### Installation Steps
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/onrent.git
+   cd onrent
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Set up environment variables
+   ```bash
+   cp .env.example .env
+   ```
+   Edit the `.env` file with your database connection string and other configuration
 
-## Deploy on Vercel
+4. Set up the database
+   ```bash
+   npx prisma migrate dev --name init
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Run the development server
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+
+## 📱 Key Features Implementation
+
+### 1. Product Listing
+
+
+### 2. Callback Form
+
+
+### 3. API Route Handler
+
+
+## 🌐 Deployment
+
+The application is deployed on Vercel, which offers seamless integration with Next.js projects. To deploy your own instance:
+
+1. Push your code to a GitHub repository
+2. Import the project in Vercel
+3. Configure environment variables
+4. Deploy!
+
+## 🧪 Testing
+
+```bash
+# Run unit tests
+npm run test
+
+# Run end-to-end tests
+npm run test:e2e
+```
+
+## 🛣️ Roadmap
+
+- [ ] User authentication
+- [ ] Admin dashboard for managing products and callback requests
+- [ ] Payment integration for booking items
+- [ ] Delivery tracking
+- [ ] Review and rating system
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch 
+3. Commit your changes 
+4. Push to the branch 
+5. Open a Pull Request
+
+## 📃 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📞 Contact
+
+For any inquiries, please reach out to:
+- Email: contact@onrent-platform.com
+- Twitter: [@OnrentPlatform](https://twitter.com/OnrentPlatform)
+
+---
+
+Built with ❤️ for students by students
