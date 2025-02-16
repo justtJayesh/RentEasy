@@ -38,7 +38,7 @@ export default function TestimonialSection() {
                         What Our Customers Say
                     </h2>
                     <p className="text-muted-foreground mt-2">
-                        Trusted by thousands of satisfied customers
+                        Relied on by satisfied households everywhere
                     </p>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

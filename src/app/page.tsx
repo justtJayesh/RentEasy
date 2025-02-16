@@ -18,7 +18,7 @@ export default async function Home() {
                     <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
                         <div className="flex flex-col justify-center space-y-4">
                             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                                Rent Premium Home Appliances
+                                Elevate Your Home with Rental Appliances
                             </h1>
                             <p className="text-lg text-muted-foreground">
                                 Quality appliances at affordable monthly
@@ -39,7 +39,7 @@ export default async function Home() {
                         </div>
                         <div className="relative hidden lg:block">
                             <Image
-                                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src="/patrick-perkins.jpg"
                                 alt="Kitchen appliances"
                                 width={600}
                                 height={400}
@@ -56,7 +56,7 @@ export default async function Home() {
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">Popular Products</h2>
                         <p className="text-muted-foreground mt-2">
-                            Choose from our wide range of premium appliances
+                            Discover our extensive inventory of wider appliances
                         </p>
                     </div>
                     <ProductGrid products={products} />
@@ -75,11 +75,11 @@ export default async function Home() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">
-                            Why Choose RentEase?
+                            Why Choose OnRent?
                         </h2>
                         <p className="text-muted-foreground mt-2">
-                            Experience hassle-free appliance rentals with
-                            premium benefits
+                            Enjoy stress-free appliance rentals with exceptional
+                            advantages
                         </p>
                     </div>
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">

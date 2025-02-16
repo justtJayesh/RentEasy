@@ -131,7 +131,7 @@ export function Footer() {
                                     href="mailto:support@rentease.com"
                                     className="text-sm text-muted-foreground hover:text-primary"
                                 >
-                                    support@rentease.com
+                                    support@onrent.com
                                 </Link>
                             </li>
                         </ul>
