@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { Github, Linkedin, Twitter, Rocket, Heart, Star } from "lucide-react";
+import {  Rocket, Heart, Star } from "lucide-react";
 
 export default function AboutPage() {
     return (
