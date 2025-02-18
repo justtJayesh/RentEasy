@@ -23,7 +23,7 @@ Onrent is an e-commerce platform designed for students who relocate to different
 
 ## 🚀 Live Demo
 
-[Visit Onrent Platform](https://www.onrent.org.in/))
+[Visit Onrent Platform](https://www.onrent.org.in/)
 
 ## 🛠️ Tech Stack
 
