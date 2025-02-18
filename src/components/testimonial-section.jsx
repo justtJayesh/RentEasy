@@ -45,7 +45,7 @@ export default function TestimonialSection() {
                     {testimonials.map((testimonial) => (
                         <Card
                             key={testimonial.name}
-                            className="border-none shadow-sm"
+                            className="border-none shadow-md"
                         >
                             <CardContent className="p-6">
                                 <div className="flex gap-1 mb-4">
