@@ -13,7 +13,7 @@ import { Input } from "./ui/input";
 import { useActionState, useEffect, useState } from "react";
 import { Label } from "./ui/label";
 import * as action from "@/actions";
-import { Toaster } from "./ui/toaster";
+// import { Toaster } from "./ui/toaster";
 
 interface RentalRequestFormProps {
     isOpen: boolean;
@@ -49,7 +49,7 @@ const RentalRequestForm = ({
     useEffect(() => {
         if (formState.message === "Request submitted successfully!") {
             onClose();
-            <Toaster />;
+            // <Toaster />;
         }
         // console.log(formState);
     }, [formState.message, onClose]);
