@@ -15,8 +15,8 @@ export default async function Home() {
             {/* Hero Section */}
             <section className="relative bg-gray-50">
                 <div className="container mx-auto px-4 py-20">
-                    <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-                        <div className="flex flex-col justify-center space-y-4">
+                    <div className="grid gap-8 place-content-between lg:grid-cols-2 lg:gap-12">
+                        <div className="flex flex-col justify-center space-y-4 ">
                             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
                                 Elevate Your Home with Rental Appliances
                             </h1>
@@ -25,7 +25,7 @@ export default async function Home() {
                                 rentals. Make your home complete without the
                                 heavy investment.
                             </p>
-                            <p className="text-md">
+                            <p className="text-sm font-thin">
                                 Minimum 6 months lock-in period*
                             </p>
                             <div className="flex gap-4">
@@ -40,7 +40,7 @@ export default async function Home() {
                                 </Button> */}
                             </div>
                         </div>
-                        <div className="relative hidden lg:block">
+                        <div className="relative mx-auto hidden lg:block">
                             <Image
                                 src="/fred-kleber.jpg"
                                 alt="Kitchen appliances"
