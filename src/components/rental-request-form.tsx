@@ -129,6 +129,7 @@ const RentalRequestForm = ({
                             }
                         />
                     </div>
+                    {/* <p className="text-xs text-red-600">Minimum 6 months lock-in period*</p> */}
                     {formState.message && (
                         <div className="text-xs text-red-500">
                             {formState.message}

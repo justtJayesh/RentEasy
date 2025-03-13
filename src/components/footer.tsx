@@ -1,11 +1,30 @@
 import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
     return (
         <footer className="border-t bg-gray-50">
             <div className="container py-12 md:py-16 m-auto px-2">
                 <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+                    <div className="space-y-2">
+                        <Link
+                            href="/"
+                            className="flex flex-col items-center space-x-4"
+                        >
+                            <Image
+                                src="/logo.png"
+                                alt="logo"
+                                width={130}
+                                height={130}
+                                className="object-contain"
+                            />
+                            <span className="text-sm font-normal">
+                                Rent with Ease!
+                            </span>
+                        </Link>
+                        {/* <p className="text-xs">Rent with Ease!</p> */}
+                    </div>
                     <div>
                         <h3 className="text-sm font-semibold">Company</h3>
                         <ul className="mt-4 space-y-2">
@@ -17,14 +36,14 @@ export function Footer() {
                                     About Us
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link
                                     href="/careers"
                                     className="text-sm text-muted-foreground hover:text-primary"
                                 >
                                     Careers
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link
                                     href="/contact"
@@ -35,7 +54,7 @@ export function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    {/* <div>
                         <h3 className="text-sm font-semibold">Products</h3>
                         <ul className="mt-4 space-y-2">
                             <li>
@@ -63,7 +82,7 @@ export function Footer() {
                                 </Link>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div>
                         <h3 className="text-sm font-semibold">Support</h3>
                         <ul className="mt-4 space-y-2">
@@ -118,6 +137,11 @@ export function Footer() {
                                     </Link>
                                 </div>
                             </li>
+                            {/* <li>
+                                <p className="text-sm text-muted-foreground hover:text-primary">
+                                    <span className="">Service Area - </span>
+                                </p>
+                            </li> */}
                             <li>
                                 <Link
                                     href="tel:+1234567890"

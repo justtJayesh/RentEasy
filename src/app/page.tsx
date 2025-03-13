@@ -25,6 +25,9 @@ export default async function Home() {
                                 rentals. Make your home complete without the
                                 heavy investment.
                             </p>
+                            <p className="text-md">
+                                Minimum 6 months lock-in period*
+                            </p>
                             <div className="flex gap-4">
                                 <Link href={"/products"}>
                                     <Button size="lg">
@@ -39,9 +42,9 @@ export default async function Home() {
                         </div>
                         <div className="relative hidden lg:block">
                             <Image
-                                src="/patrick-perkins.jpg"
+                                src="/fred-kleber.jpg"
                                 alt="Kitchen appliances"
-                                width={600}
+                                width={400}
                                 height={400}
                                 className="rounded-lg object-cover"
                             />

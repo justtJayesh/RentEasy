@@ -16,8 +16,10 @@ const MarqueeText = () => {
             >
                 <p>
                     🏠 Currently Available Only in{" "}
-                    <span className="font-normal uppercase">Pune</span> - Quality Appliance
-                    Rentals at Your Service 🏠
+                    <span className="font-normal uppercase">
+                        Vishrantwadi, Dhanori, Viman nagar, Lohegaon - Pune
+                    </span>{" "}
+                    - Quality Appliance Rentals at Your Service 🏠
                 </p>
             </motion.div>
         </div>
